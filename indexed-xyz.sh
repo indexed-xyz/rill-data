@@ -27,8 +27,7 @@ curl -s https://cdn.rilldata.com/install.sh | bash -s -- --nightly
 
 if [ ! -d "$PROJECT" ]; then
     echo "Cloning your indexed.xyz core analysis to $PROJECT..."
-    # TODO: Point this to the public repo when available.
-    git clone https://github.com/indexed-xyz/rill.git $PROJECT
+    git clone https://github.com/indexed-xyz/rill-data.git $PROJECT
 
     echo "Personalizing exploration for contract $ADDRESS..."
     for f in \
