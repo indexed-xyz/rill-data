@@ -16,6 +16,9 @@ To get started, run the script below with the smart contract you are interested 
 curl -s https://cdn.rilldata.com/indexed-xyz.sh | bash -s <your contract> 43c31ff797ec2387177cabab6d18f15a afb354f05026f2512557922974e9dd2fdb21e5c2f5cbf929b35f0645fb284cf7
 ``` 
 
+*The initial script may take a while depending on your network connection as it downloads some large remote data files.*
+
+
 ## Example
 
 This example downloads [Art Blocks](https://www.artblocks.io/) smart contract events (contract: [0xa7d8d9ef8d8ce8992df33d8b8cf4aebabd5bd270](https://etherscan.io/address/0xa7d8d9ef8d8ce8992df33d8b8cf4aebabd5bd270)):

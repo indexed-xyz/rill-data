@@ -10,4 +10,4 @@ SELECT
   CAST(block_number AS VARCHAR) AS block_number,
   * EXCLUDE(block_number), 
 FROM indexed_xyz_contract_raw
-WHERE address = '{{ address }}'
+WHERE LOWER(address) = LOWER('{{ address }}')
