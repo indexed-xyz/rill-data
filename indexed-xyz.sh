@@ -8,10 +8,11 @@ if [[ -z ${ADDRESS} ]]; then
 fi
 
 OS=$(uname -s | tr '[:upper:]' '[:lower:]')
+ADDRESS_LOWER_CASE=$(echo $ADDRESS | tr '[:upper:]' '[:lower:]')
 if [ $OS == "darwin" ]; then
-    ADDRESS_HASH=$(md5 -qs $ADDRESS)
+    ADDRESS_HASH=$(md5 -qs $ADDRESS_LOWER_CASE)
 elif [ $OS == "linux" ]; then
-    ADDRESS_HASH=$(echo -n $ADDRESS | md5sum | awk '{print $1}')
+    ADDRESS_HASH=$(echo -n $ADDRESS_LOWER_CASE | md5sum | awk '{print $1}')
 else
     printf "Platform not supported: os=$OS\n"
     exit 1
