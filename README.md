@@ -26,7 +26,7 @@ This example downloads [Art Blocks](https://www.artblocks.io/) smart contract ev
 curl -s https://cdn.rilldata.com/indexed-xyz.sh | bash -s 0xa7d8d9ef8D8Ce8992Df33D8b8CF4Aebabd5bD270 43c31ff797ec2387177cabab6d18f15a afb354f05026f2512557922974e9dd2fdb21e5c2f5cbf929b35f0645fb284cf7
 ```
 
-You can learn more about how to transform this generalizable default dashboard to something that more menaingful for a specific contract on Rill Data's [blog post](https://docs.rilldata.com/indexed-xyz).
+You can learn more about how to transform this generalizable default dashboard to something that more menaingful for a specific contract on Rill Data's [blog post](https://rilldata.com/indexed-xyz).
 
 
 ## About
